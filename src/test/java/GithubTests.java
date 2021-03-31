@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class GithubTest {
+public class GithubTests {
 
     @BeforeAll
     static  void setup() {
@@ -25,7 +25,7 @@ public class GithubTest {
     }
 
     @Test
-    void TestGithub() {
+    void testGithub() {
 
         open("https://github.com/selenide/selenide");
         $("h1").shouldHave(Condition.text("selenide / selenide"));
